@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background: #3C2A21;
+    
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bolhas{
+    position: absolute;
+    display: flex;
+    
+}
+.bolhas span{
+    width: 30px;
+    height: 30px;
+    background: #E5E5CB;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #E5E5CB44,
+    0 0 50px #E5E5CB,
+    0 0 100px #E5E5CB; 
+    animation: animar calc(150s / var(--i)) linear infinite;
+}
+
+@keyframes animar {
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.bolhas span:nth-of-type(even) {
+    background: #e9f2f9;
+    box-shadow: 0 0 0 10px #e9f2f944,
+    0 0 50px #e9f2f9,
+    0 0 100px #e9f2f9;
+}
+/*------------------------------------------------------------------------------------*/
+h1{
+    margin-top: 4em;
+    font-size: 4em;
+    color: #fff;
+}
+h2{
+    font-size: 4em;
+    color: #fff;
+}
+
+h3{
+    font-size: 2em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 40px;
+    color: #fff;
+}
+
+.box{
+    border: 2px solid  #fff;
+    display: inline-block;
+    font-size: 4em;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.btn-jogar{
+    padding: 8px 15px;
+    border: 0;
+    background-color:  #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
