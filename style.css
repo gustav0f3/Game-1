@@ -3,6 +3,7 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body{
@@ -55,6 +56,10 @@ body{
     0 0 100px #e9f2f9;
 }
 /*------------------------------------------------------------------------------------*/
+.tex{
+    user-select: none;
+}
+
 h1{
     margin-top: 4em;
     font-size: 4em;
@@ -87,9 +92,14 @@ h3{
 }
 
 .btn-jogar{
+
     padding: 8px 15px;
     border: 0;
     background-color:  #fff;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 20px;
+}
+
+.btn-jogar:hover{
+    letter-spacing: .5px;
 }

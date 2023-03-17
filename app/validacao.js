@@ -79,9 +79,11 @@ function verificaSeOChutePossuiUmValorValido(chute) {
         <span style="--i:9"></span>
         <span style="--i:28"></span>
     </div>
+            <div class = "box-mensagem">
             <h2 style = "margin-top:5em;">Você acertou!</h2>
             <h3>O número secreto era ${numeroSecreto}</h3>
             <button id="jogar-novamente" class="btn-jogar">Jogar Novamente</button>
+            </div>
             </div>
         `
     } else if (numero > numeroSecreto) {
